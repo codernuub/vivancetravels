@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import logo from '../img/vivancelogo.png';
 import userlogo from '../img/user.png';
 import { MenuList, CountryList } from './utils/ListBuilder';
@@ -8,47 +10,47 @@ export default function Header(prop) {
 
     const [countryLists] = useState([
         {
-            flag:'au',
+            flag: 'au',
             currency: 'AUD',
-            code:'A$',
-            href:"https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/AUD"
+            code: 'A$',
+            href: "https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/AUD"
         },
         {
 
-            flag:'bh',
+            flag: 'bh',
             currency: 'BHD',
-            code:'ب.د',
-            href:"https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/BHD"
+            code: 'ب.د',
+            href: "https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/BHD"
         },
         {
-            flag:'eu',
+            flag: 'eu',
             currency: 'EUR',
-            code:'€',
-            href:"https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/EUR"
+            code: '€',
+            href: "https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/EUR"
         },
         {
-            flag:'gb',
+            flag: 'gb',
             currency: 'GBP',
             code: '£',
-            href:"https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/GBP"
+            href: "https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/GBP"
         },
         {
-            flag:'in',
+            flag: 'in',
             currency: 'INR',
-            code:'₹',
-            href:"https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/INR"
+            code: '₹',
+            href: "https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/INR"
         },
         {
-            flag:'sa',
+            flag: 'sa',
             currency: 'SAR',
-            code:'SAR',
-            href:"https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/SAR"
+            code: 'SAR',
+            href: "https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/SAR"
         },
         {
-            flag:'us',
+            flag: 'us',
             currency: 'USD',
-            code:'$',
-            href:"https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/USD"
+            code: '$',
+            href: "https://www.vivancetravels.com/index.php/utilities/set_preferred_currency/USD"
         }
     ])
 
@@ -70,11 +72,11 @@ export default function Header(prop) {
                     <MenuList lists={prop.menulists} />
                 </div>
                 {/*menu*/}
-                <img alt="vivance icon" src={logo} />
+                <Link className='img-link' to="/"><img alt="vivance icon" src={logo} /></Link>
             </div>
             <div className="right-head">
                 <div className="userlogo">
-                    <img src={userlogo} alt="" />
+                    <img className="img" src={userlogo} alt="" />
                 </div>
 
                 <div className='countries'>

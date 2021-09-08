@@ -11,11 +11,13 @@ header>.left-head {
     display: flex;
 }
 
-header>.left-head>img {
+header>.left-head>.img-link {
     width: 55%;
     margin: auto 0;
 }
-
+header>.left-head>.img-link>img{
+    width: 100%;
+}
 /*menu bar inactive*/
 
 .menu {
@@ -200,7 +202,7 @@ header>.right-head {
 }
 
 @media only screen and (min-width: 700px) {
-    header>.left-head>img {
+    header>.left-head>.img-link {
         width: 30%;
         margin: auto 0;
     }
@@ -210,7 +212,7 @@ header>.right-head {
     header {
         width: 85%;
         max-width: 2000px;
-        padding:0px 2.5%;
+        padding: 0px 2.5%;
         margin: auto;
         justify-content: space-between;
     }
@@ -218,7 +220,7 @@ header>.right-head {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    header>.left-head>img {
+    header>.left-head>.img-link {
         width: 20%;
         margin: auto 0;
     }
