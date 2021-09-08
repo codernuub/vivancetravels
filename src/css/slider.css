@@ -1,0 +1,30 @@
+.slider {
+    width: 100%;
+    display: none;
+}
+
+.slider > .slider-wrapper {
+    width: 90%;
+    display: flex;
+    margin:auto;
+}
+.slider > .slider-wrapper > .slides {
+    margin: auto 0;
+}
+.slider > .slider-wrapper > .angle {
+    font-size: 4rem;
+    color: #353587;
+    margin: auto 10px;
+}
+.slider > .slider-wrapper > .angle > i {
+    font-weight: bold;;
+}
+
+@media only screen and (min-width:700px) {
+    .slider {
+        display: block;
+    }
+    .slider > h2 {
+        text-align: center;
+    }
+}

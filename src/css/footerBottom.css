@@ -1,0 +1,30 @@
+.footer-bottom{
+    background-color: #353587;
+    overflow-y: hidden;
+}
+.footer-bottom > ul{
+    list-style: none; 
+    padding:0;
+    text-align: center;
+}
+
+.footer-bottom > ul > li{
+    display: inline-block;
+    padding: 5px 15px 0 15px;
+    margin:0;
+    border-right: 2px solid white;
+}
+.footer-bottom > ul > li:nth-last-child(){
+    border: none;
+}
+.footer-bottom > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom > p > span{
+    color: #f08622;
+}
+.footer-bottom > p{
+    color: white;
+    text-align: center;
+}

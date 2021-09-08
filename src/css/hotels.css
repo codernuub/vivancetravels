@@ -1,0 +1,56 @@
+.hotel-wrapper {
+    background-color: #ededf7;
+    padding:2.5% 0;
+}
+@media only screen and (min-width:700px) {
+
+    .hotels {
+        display: flex;
+        width:100%;
+        padding-bottom:2px;
+        overflow-x: scroll;
+    }
+    .hotels>.hotel {
+        min-width:30%;
+        margin-right:5%;
+        height: fit-content;
+        box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.080);
+        background-color: white;
+    }
+    .hotels > .hotel:last-child {
+        margin:0;
+    }
+    .hotels>.hotel>img {
+        width: 100%;
+        height: 200px;
+    }
+    .hotels>.hotel>.card-content {
+        padding: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hotels>.hotel>.card-content>h3 {
+        font-weight: 300;
+        color: #333;
+        margin: 0;
+    }
+    .hotels>.hotel>.card-content>span {
+        color: grey;
+        margin: auto 0;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .hotels {
+        width:100%;
+        max-width: 2000px;
+    }
+    .hotels::-webkit-scrollbar{
+        display: none;
+    }
+    .hotels > .hotel {
+        min-width:23%;
+        margin-right:2.5%;
+        justify-content: space-between;
+    }
+}

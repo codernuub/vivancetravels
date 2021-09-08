@@ -1,0 +1,249 @@
+header {
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*left head*/
+
+header>.left-head {
+    display: flex;
+}
+
+header>.left-head>img {
+    width: 55%;
+    margin: auto 0;
+}
+
+/*menu bar inactive*/
+
+.menu {
+    position: relative;
+}
+
+.list {
+    list-style: none;
+    position: absolute;
+    width: fit-content;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 2px;
+    height: 0;
+    overflow: hidden;
+}
+
+.open-list {
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.08);
+    height: auto;
+}
+
+.list>li {
+    display: block;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.list>.triangle {
+    top: -8%;
+    right: 10%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.08);
+    transform: rotate(45deg);
+    background-color: white;
+    position: absolute;
+    z-index: -1
+}
+
+.menulist>li {
+    padding: 10px 0;
+    width: 180px;
+    border-bottom: 1px solid #eee;
+}
+
+.menulist>li>a {
+    text-decoration: none;
+    color: #333;
+    line-height: 33px;
+}
+
+/*menu bar*/
+
+.menubar {
+    width: 25px;
+    padding: 2.5px;
+    margin: auto 10px auto 0;
+}
+
+.menubar>span {
+    display: block;
+    background-color: #f08622;
+    margin: 6px 0;
+    height: 4px;
+}
+
+/*Right Head*/
+
+header>.right-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userlogo {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 100%;
+    border: 1px solid grey;
+    overflow: hidden;
+    margin: auto 5px auto 0;
+}
+
+.userlogo>img {
+    display: block;
+    width: 30px;
+    margin: auto;
+}
+
+/*country list*/
+
+.countries {
+    position: relative;
+    display: flex;
+}
+
+.countries>span {
+    display: block;
+    margin: auto;
+}
+
+.top {
+    display: flex;
+    margin: auto 0;
+}
+
+.top>.dropdown {
+    margin: auto 0 auto 10px;
+}
+
+.countryFlag {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #333;
+}
+
+.countryFlag>span {
+    display: block;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.countrylist {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 5px;
+    margin-top: 80px;
+}
+
+.countrylist>li {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    margin: 5px 0;
+}
+
+.countrylist>li>a {
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.countrylist>li:nth-child(odd) {
+    background-color: rgba(238, 238, 238, 0.849);
+}
+
+.countrylist>li>a>span {
+    margin: auto 0;
+}
+
+.countrylist>li>a>.countryName {
+    margin: auto 10px;
+}
+
+.countrylist>li>.countryCurr {
+    display: flex;
+    display: flex;
+    height: auto;
+    width: 40px;
+    background-color: rgba(128, 128, 128, 0.644);
+    font-size: 1rem;
+}
+
+.countrylist>li>.countryCurr:hover {
+    background: #0095ce;
+    transition: all 300ms ease-in-out
+}
+
+.countrylist>li>.countryCurr>span {
+    width: fit-content;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+@media only screen and (min-width: 700px) {
+    header>.left-head>img {
+        width: 30%;
+        margin: auto 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        width: 85%;
+        max-width: 2000px;
+        padding:0px 2.5%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    header>.left-head {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    header>.left-head>img {
+        width: 20%;
+        margin: auto 0;
+    }
+    .menu {
+        position: static;
+        margin: auto;
+    }
+    .menubar {
+        display: none;
+    }
+    .menulist {
+        display: flex;
+        position: static;
+        height: auto;
+    }
+    .menulist>li {
+        white-space: nowrap;
+        padding: 0 10px;
+        height: fit-content;
+        margin: auto 0;
+        width: fit-content;
+        border-bottom: none;
+        font-size: 1.3vw
+    }
+    .menulist>li>a {
+        color: #05058d
+    }
+}

@@ -1,0 +1,134 @@
+.container {
+    text-align: center;
+    background-color: #ededf7;
+    width: 95%;
+    padding: 5% 2.5%;
+}
+
+.footer-list-wrapper>h3, h2 {
+    color: #353587;
+    font-weight: 300;
+}
+
+.footer-list>li {
+    color: #353587;
+    font-size: 0.9rem;
+}
+
+.container>.dest {
+    width: 85%;
+    padding: 0 7.5%
+}
+
+.container>.dest>h3 {
+    margin: 0;
+}
+
+.container>.dest>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container>.dest>ul>li {
+    display: inline;
+    cursor: pointer;
+    padding: 10px 5px;
+    font-size: 0.8rem;
+}
+
+.container h1, h2 {
+    font-weight: 300;
+}
+
+.details {
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.details>.col>ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.5;
+}
+.details > .col > ul > li {
+    margin:5px 0;
+}
+.details > .col > ul > li > a {
+    text-decoration: none;
+    color: #353587;
+}
+.details > .col > ul > #card {
+    margin:10px 0;
+}
+.details > .col > ul > #card > a{
+    display: block;
+}
+.details>.col>form {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.details>.col>form>input, button {
+    display: block;
+}
+
+.details>.col>form>input {
+    outline-style: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.details>.col>form>button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #F08622;
+    color: #ffff;
+    position: relative;
+    left: -5px;
+}
+.details > .col > .social > a{
+    text-decoration: none;
+    color: #353587;
+}
+.details > .col > .social > a:hover{
+    color:#0095ce;
+}
+@media only screen and (min-width: 1000px) {
+    .container {
+        width: 85%;
+        padding: 20px 7.5%;
+        text-align: left;
+    }
+    .container>.dest {
+        width: 100%;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 15% 80%;
+        justify-content: space-between;
+    }
+    .container>.dest>ul>li {
+        font-size: 0.8rem;
+    }
+    .container>.dest>ul {
+        margin: auto 0;
+    }
+
+    .details {
+        width:100%;
+        padding:0;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+    .details > .col {
+        margin: 0;
+        padding:0;
+    }
+}
