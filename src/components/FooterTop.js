@@ -43,7 +43,7 @@ export default function FooterTop() {
                 <ul className="footer-list">
 
                     <li>
-                        <a href="https://www.vivancetravels.com/index.php/general/promo_list">Offers</a>
+                        <Link to="/offers" className="a">Offers</Link>
                     </li>
                     <li>
                         <a id="flight_fare_calendar">Fare Calender</a>

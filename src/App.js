@@ -5,6 +5,7 @@ import AboutUs from './pages/AboutUs';
 import Faq from './pages/Faq';
 import Term from './pages/Terms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Offers from './pages/Offers'
 
 function App() {
   const [menuLists] = useState([
@@ -43,6 +44,7 @@ function App() {
       <Switch>
         <Route exact path="/" render={() => (<Home menuLists={menuLists} />)} />
         <Route path="/aboutus" render={() => (<AboutUs menuLists={menuLists} />)} />
+        <Route path="/offers" render={() => <Offers menuLists={menuLists} />} />
         <Route path="/faq" render={() => <Faq menuLists={menuLists} />} />
         <Route path="/termsandconditions" render={() => (<Term menuLists={menuLists} />)} />
         <Route path="/privacypolicy" render={() => (<PrivacyPolicy menuLists={menuLists} />)} />
