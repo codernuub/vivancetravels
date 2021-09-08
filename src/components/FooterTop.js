@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 import { DestList } from './utils/ListBuilder';
 import '../css/footerTop.css';
 
@@ -15,8 +16,9 @@ export default function FooterTop() {
             <div className="col footer-list-wrapper">
                 <h3>Vivance Travels</h3>
                 <ul className="footer-list">
+
                     <li>
-                        <a href="https://www.vivancetravels.com/about-us">About us</a>
+                        <Link to="/aboutus" className="a">About us</Link>
                     </li>
                     <li>
                         <a>Contact us</a>
@@ -33,26 +35,29 @@ export default function FooterTop() {
                     <li>
                         <a href="www.kumbhsukrit.com">www.kumbhsukrit.com</a>
                     </li>
+
                 </ul>
             </div>
             <div className="col footer-list-wrapper">
                 <h3>Info</h3>
                 <ul className="footer-list">
+
                     <li>
                         <a href="https://www.vivancetravels.com/index.php/general/promo_list">Offers</a>
                     </li>
                     <li>
                         <a id="flight_fare_calendar">Fare Calender</a>
                     </li>
-                    <li >
-                        <a href="https://www.vivancetravels.com/faq">FAQ</a>
+                    <li>
+                        <Link to="/faq" className="a">FAQ</Link>
                     </li>
                     <li>
-                        <a href="https://www.vivancetravels.com/terms-conditions">Terms Condition</a>
+                        <Link to="/termsandconditions" className="a">Terms Condition</Link>
                     </li>
                     <li>
-                        <a href="https://www.vivancetravels.com/privacy-policy">Privacy Policy</a>
+                        <Link to="/privacypolicy" className="a">Privacy Policy</Link>
                     </li>
+
                 </ul>
             </div>
             <div className="col input footer-list-wrapper">

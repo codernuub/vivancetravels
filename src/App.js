@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Faq from './pages/Faq';
@@ -38,9 +39,15 @@ function App() {
   ]);
 
   return (
-    <div className="app">
-      <PrivacyPolicy menuLists={menuLists} />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" render={() => (<Home menuLists={menuLists} />)} />
+        <Route path="/aboutus" render={() => (<AboutUs menuLists={menuLists} />)} />
+        <Route path="/faq" render={() => <Faq menuLists={menuLists} />} />
+        <Route path="/termsandconditions" render={() => (<Term menuLists={menuLists} />)} />
+        <Route path="/privacypolicy" render={() => (<PrivacyPolicy menuLists={menuLists} />)} />
+      </Switch>
+    </Router>
   );
 }
 

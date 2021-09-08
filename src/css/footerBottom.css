@@ -17,7 +17,7 @@
 .footer-bottom > ul > li:nth-last-child(){
     border: none;
 }
-.footer-bottom > ul > li > a{
+.footer-bottom > ul > li > a, .a{
     color: white;
     text-decoration: none;
 }
