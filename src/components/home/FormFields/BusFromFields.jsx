@@ -1,13 +1,8 @@
 import React from 'react';
 
-export default function FormFields() {
+export default function BusFormFields() {
     return (
         <div className="formfield">
-            <div className="sub-content">
-                <span>One Way</span>
-                <span>Round Trip</span>
-                <span class="active">Multi City</span>
-            </div>
             <form>
                 <div className="input-content">
                     <label>From</label>
@@ -25,13 +20,7 @@ export default function FormFields() {
                 </div>
                 <div className="sort-field">
                     <div className="input-content">
-                        <label>Departure</label>
-                        <div className="input">
-                            <input type="date" placeholder="Select Date" />
-                        </div>
-                    </div>
-                    <div className="input-content">
-                        <label>Return</label>
+                        <label>Date</label>
                         <div className="input">
                             <input type="date" placeholder="Select Date" />
                         </div>
