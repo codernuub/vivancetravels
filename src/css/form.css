@@ -5,7 +5,8 @@
 
 /*form fields*/
 
-select {
+select,
+input {
     border: none !important;
     outline: none !important;
     width: 100%;

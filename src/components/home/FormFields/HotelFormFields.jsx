@@ -18,7 +18,7 @@ export default function HotelFormFields() {
                         <input placeholder="Type Departure City" />
                     </div>
                 </div>
-                <div className="sort-field">
+                {/* <div className="sort-field"> */}
                     <div className="input-content">
                         <label>Check In</label>
                         <div className="input date-input">
@@ -31,10 +31,10 @@ export default function HotelFormFields() {
                             <input type="date" placeholder="Select Date" />
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
                 <div className="input-content">
                         <label>No. of Nights</label>
-                        <div className="input">
+                        <div className="input" style={{height:"33%"}}>
                             <select name="no_of_nights" id="no_of_nights">
                                 {
                                     NightsArray.map(count=><option value={count}>{count}</option>)

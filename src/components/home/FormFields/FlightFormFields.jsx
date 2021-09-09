@@ -23,7 +23,7 @@ export default function FlightFormFields() {
                         <input placeholder="Type Departure City" />
                     </div>
                 </div>
-                <div className="sort-field">
+                {/* <div className="sort-field"> */}
                     <div className="input-content">
                         <label>Departure</label>
                         <div className="input date-input">
@@ -36,7 +36,7 @@ export default function FlightFormFields() {
                             <input type="date" placeholder="Select Date" />
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
                 <button><span class="fa fa-search"></span></button>
             </form>
         </div>
