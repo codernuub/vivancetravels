@@ -11,7 +11,7 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 
 export default function FormSection(prop) {
 
-    const [formView,setFormView] = useState("FLIGHTS")
+    const [formView,setFormView] = useState("FLIGHTS");
 
 
     const [formListsData,setFromListData] = useState([

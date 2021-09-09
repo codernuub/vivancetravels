@@ -26,13 +26,13 @@ export default function FlightFormFields() {
                 <div className="sort-field">
                     <div className="input-content">
                         <label>Departure</label>
-                        <div className="input">
+                        <div className="input date-input">
                             <input type="date" placeholder="Select Date" />
                         </div>
                     </div>
                     <div className="input-content">
                         <label>Return</label>
-                        <div className="input">
+                        <div className="input date-input">
                             <input type="date" placeholder="Select Date" />
                         </div>
                     </div>

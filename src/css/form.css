@@ -5,6 +5,12 @@
 
 /*form fields*/
 
+select {
+    border: none !important;
+    outline: none !important;
+    width: 100%;
+}
+
 .formfield {
     width: 100%;
     padding: 20px 0;
@@ -81,6 +87,10 @@
     padding: 10px 0;
 }
 
+.date-input {
+    height: 32% !important;
+}
+
 .formfield>form>button {
     display: block;
     width: 100%;
@@ -106,6 +116,7 @@
 
 .formlists>.formlist {
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .formlists>.formlist>.circle {
