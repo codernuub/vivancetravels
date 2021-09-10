@@ -1,82 +1,151 @@
 .form-wrapper {
     width: 100%;
 }
+
+
 /*form fields*/
-.formfield {
-    width:100%;
-    padding:20px 0;
+
+select,
+input {
+    border: none !important;
+    outline: none !important;
+    width: 100%;
 }
-.formfield > .sub-content {
+
+.formfield {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.formfield>.sub-content {
     display: flex;
     justify-content: center;
 }
-.formfield > .sub-content > span {
+
+#formfield>span>.sub-content {
+    display: flex;
+    justify-content: center;
+}
+
+.formfield>.sub-content>span,
+#flightFormfield>.span>.sub-content>span {
     display: block;
     width: fit-content;
-    padding:1% 2.5%;
-    margin:0 10px;
-    border-radius:5px;
+    padding: 1% 2.5%;
+    margin: 0 10px;
+    border-radius: 5px;
     background-color: #eee;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.080);
+    cursor: pointer;
 }
-.formfield > .sub-content > .active {
+
+.formfield>.sub-content>.active,
+#flightFormField>.span>.sub-content>.active {
     background-color: rgba(240, 134, 34, 0.8);
     color: white;
 }
 
-.formfield > form {
-    margin:20px 0;
+.formfield>form {
+    margin: 20px 0;
     background-color: rgba(0, 0, 0, 0.6);
-    width:90%;
-    padding:5%;
+    width: 90%;
+    padding: 2% 5%;
 }
+
+#flightFormField .span {
+    width: 100%;
+}
+
 .input-content {
     color: white;
     border-bottom: 2px solid #7695bb;
     margin-bottom: 10px;
 }
-.input-content > .input {
-    color:#7695bb;
-    padding:10px;
+
+.input-content>.input {
+    color: #7695bb;
+    padding: 10px;
 }
-.input-content > .input > span {
-    background-color:transparent;
+
+.input-content>.input>span {
+    background-color: transparent;
     font-size: 1.1rem;
     margin-right: 10px;
 }
-.input-content > .input > input {
+
+.input-content>.input>input {
     background-color: transparent;
     font-size: 1.1rem;
-    border:none;
+    border: none;
 }
-.input-content > .input > input::placeholder{
+
+.input-content>.input>input::placeholder {
     color: #7695bb;
 }
+
 .sort-field {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
-.sort-field > .input-content {
-    width:45%;
+
+.sort-field>.input-content {
+    width: 45%;
 }
-.sort-field > .input-content > .input > input {
+
+.sort-field>.input-content>.input>input {
     font-size: 0.9rem;
 }
-.sort-field > .input-content > .input {
-    padding:10px 0;
+
+.sort-field>.input-content>.input {
+    padding: 10px 0;
 }
-.formfield > form > button {
+
+.date-input {
+    height: 32% !important;
+}
+
+.formfield>form>button {
     display: block;
     width: 100%;
     background-color: rgba(240, 134, 34, 0.8);
     border: none;
     border-radius: 5px;
-    padding:12px 0;
+    padding: 12px 0;
     color: white;
     font-size: 1.1rem;
-    margin-top:10px;
+    margin-top: 10px;
 }
+
+#flightFormField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#flightFormField .span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#flightFormField .span button {
+    display: block;
+    width: 5%;
+    background-color: rgba(240, 134, 34, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 0;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+
 /*form lists*/
+
 .formlists {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +155,8 @@
 }
 
 .formlists>.formlist {
-    margin:10px 0;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 .formlists>.formlist>.circle {
@@ -134,20 +204,19 @@
         margin: auto;
         justify-content: center;
     }
-    .formlists > .formlist {
+    .formlists>.formlist {
         text-align: center;
-        margin:15px;
+        margin: 15px;
     }
     .formlists>.formlist>p {
         display: block;
-        margin:10px auto 0 auto;
-        font-size:0.9rem;
+        margin: 10px auto 0 auto;
+        font-size: 0.9rem;
     }
     .formlists>.formlist>.circle {
         width: 50px;
         height: 50px;
     }
-
     .formlists>.formlist>.circle>.icon-box {
         width: 40px;
         height: 40px;
@@ -155,36 +224,40 @@
 }
 
 @media only screen and (min-width:1000px) {
-    .formfield > form {
-        width:80%;
-        margin:20px auto;
+    .formfield>form {
+        width: 65%;
+        margin: 20px auto;
         display: flex;
         justify-content: center;
     }
     .input-content {
-        width:fit-content;
+        width: fit-content;
         border-bottom: none;
-        margin: 0 5px
+        margin: 0 5px;
+        transition: 0.2s;
     }
-    .formfield > form > .input-content > .input {
-      display: flex;
+    .formfield>form>.input-content>.input {
+        display: flex;
     }
-    .input-content > .input {
+    #flightFormfield>.span>.input-content>.input {
+        display: flex;
+    }
+    .input-content>.input {
         background-color: white;
         border-radius: 5px;
-        color:rgba(240, 134, 34, 0.8);
-        padding:10px;
+        color: rgba(240, 134, 34, 0.8);
+        padding: 10px;
     }
-    .input-content > .input > span {
-        background-color:transparent;
-        margin:auto 10px auto 0;
+    .input-content>.input>span {
+        background-color: transparent;
+        margin: auto 10px auto 0;
     }
-    .input-content > .input > input {
+    .input-content>.input>input {
         background-color: transparent;
         font-size: 0.9rem;
-        border:none;
+        border: none;
     }
-    .input-content > .input > input::placeholder{
+    .input-content>.input>input::placeholder {
         color: #333;
     }
     .sort-field {
@@ -192,18 +265,45 @@
         display: flex;
         justify-content: start
     }
-    .sort-field > .input-content > .input {
-        width:fit-content;
-        padding:10px;
+    .sort-field>.input-content>.input {
+        width: fit-content;
+        padding: 10px;
     }
-    .sort-field > .input-content > .input > input {
+    .sort-field>.input-content>.input>input {
         font-size: 0.9rem;
     }
-    .formfield > form > button {
-        width:fit-content;
-        padding:10px;
+    .formfield>form>button {
+        width: fit-content;
+        padding: 10px;
         font-size: 1rem;
         height: fit-content;
-        margin:auto 5px 0 5px;
+        margin: auto 5px 0 5px;
     }
+    #flightformField>.span>button {
+        width: fit-content;
+        padding: 10px;
+        font-size: 1rem;
+        height: fit-content;
+        margin: auto 5px 0 5px;
+    }
+}
+
+.disabled-date {
+    pointer-events: none;
+    background-color: rgba(255, 249, 249, 0.699) !important;
+}
+
+#flightFormField .span .input-content .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#flightFormField .span .input-content .input span {
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+#flightFormField .span button {
+    margin-top: 17px;
 }

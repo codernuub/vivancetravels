@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
-import FormFields from './FormFields';
+import FlightFormFields from './FormFields/FlightFormFields';
+import HotelFormFields from './FormFields/HotelFormFields'
+import BusFormFields from './FormFields/BusFromFields';
+import TransferFormFields from './FormFields/TransferFormFields'
+import ActivitiesFormFields from './FormFields/ActivitiesFormFields'
+import HolidaysFormFields from './FormFields/HolidaysFormFields'
 import FormLists from './FormLists';
 import '../../css/form.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 export default function FormSection(prop) {
-    const [formListsData] = useState([
+
+    const [formView, setFormView] = useState("FLIGHTS");
+
+
+    const [formListsData, setFromListData] = useState([
         {
             id: "list-1",
             icon: "fa-plane",
             name: "FLIGHTS",
-            active: false
+            active: true,
         },
         {
             id: "list-2",
             icon: "fa-hotel",
             name: "HOTELS",
-            active: true
+            active: false
         },
         {
             id: "list-3",
@@ -44,8 +54,31 @@ export default function FormSection(prop) {
     ])
     return (
         <div className="form-wrapper">
-            <FormFields />
-            <FormLists formLists={formListsData} />
+            {
+                formView == "FLIGHTS" ?
+                    <FlightFormFields /> : ""
+            }
+            {
+                formView == "HOTELS" ?
+                    <HotelFormFields /> : ""
+            }
+            {
+                formView == "BUSES" ?
+                    <BusFormFields /> : ""
+            }
+            {
+                formView == "TRANSFERS" ?
+                    <TransferFormFields /> : ""
+            }
+            {
+                formView == "ACTIVITIES" ?
+                    <ActivitiesFormFields /> : ""
+            }
+            {
+                formView == "HOLIDAYS" ?
+                    <HolidaysFormFields /> : ""
+            }
+            <FormLists formLists={formListsData} setFormView={setFormView} setFromListData={setFromListData} />
         </div>
     )
 }

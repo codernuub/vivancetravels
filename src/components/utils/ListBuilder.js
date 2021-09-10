@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function MenuList(prop) {
     return (<ul className="menulist list">
         {prop.lists.map((list, index) => {
             return <li key={index + 1}>
-                <a href={list.link}>{list.label.toUpperCase()}</a>
+                <Link className="a" to={list.link}>{list.label.toUpperCase()}</Link>
             </li>
         })}
     </ul>)
@@ -13,7 +14,7 @@ function MenuList(prop) {
 function CountryList(prop) {
     return (<ul className="countrylist list">
         {prop.list.map((list, index) => {
-            return <li key={index+1}>
+            return <li key={index + 1}>
                 <a href={list.href}>
                     <span className="countryFlag">
                         <span className={`flag-icon flag-icon-${list.flag} flag-icon-squared`}></span>
@@ -34,7 +35,7 @@ export default function DestList(prop) {
         <h3>{prop.label}</h3>
         <ul className="footer-list">
             {prop.lists.map((list, index) => {
-               return <li key={index + 1}><span>{list}</span></li>
+                return <li key={index + 1}><span>{list}</span></li>
             })}
         </ul>
     </div>)

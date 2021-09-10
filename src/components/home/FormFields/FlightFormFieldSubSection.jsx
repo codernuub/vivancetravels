@@ -1,15 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-export default function FormFields() {
+function FlightFormFieldSubSection({flightType}) {
+    console.log(flightType)
     return (
-        <div className="formfield">
-            <div className="sub-content">
-                <span>One Way</span>
-                <span>Round Trip</span>
-                <span class="active">Multi City</span>
-            </div>
-            {/*-----*/}
-            <form>
+        <span className="span">
                 <div className="input-content">
                     <label>From</label>
                     <div className="input">
@@ -24,23 +18,27 @@ export default function FormFields() {
                         <input placeholder="Type Departure City" />
                     </div>
                 </div>
-                <div className="sort-field">
+                {/* <div className="sort-field"> */}
                     <div className="input-content">
                         <label>Departure</label>
-                        <div className="input">
+                        <div className="input date-input">
                             <input type="date" placeholder="Select Date" />
                         </div>
                     </div>
                     <div className="input-content">
                         <label>Return</label>
-                        <div className="input">
-                            <input type="date" placeholder="Select Date" />
+                        <div 
+                            className={flightType==="one_way"?"input date-input disabled-date":"input date-input"}
+                            disabled={flightType==="one_way"?true:false}    
+                        >
+                            <input type="date" placeholder="Select Date"/>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
                 <button><span class="fa fa-search"></span></button>
-            </form>
-            {/*-----*/}
-        </div>
+                <br/> 
+        </span>
     )
 }
+
+export default FlightFormFieldSubSection

@@ -1,0 +1,77 @@
+.content {
+    padding: 2.5%;
+}
+
+.main-content {
+    width: 100%;
+    background-color: #ededf7;
+    padding: 10px 0;
+}
+
+.main-content>h2 {
+    color: #f08622;
+    text-align: center;
+    font-weight: 400;
+    margin: 0
+}
+
+.main-content>.mytrip-form-content {
+    width: 80%;
+    padding: 5%;
+    margin: 5% auto;
+    background-color: white;
+}
+
+.main-content>.mytrip-form-content>p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0;
+}
+
+.main-content>.mytrip-form-content {
+    border-radius: 5px;
+}
+
+.main-content>.mytrip-form-content>form>input {
+    display: block;
+    width: 90%;
+    border: 2px solid #eee !important;
+    border-radius: 5px;
+    padding: 3% 5%;
+    margin: 10px 0;
+}
+
+.main-content>.mytrip-form-content>form>button {
+    display: block;
+    width: fit-content;
+    background-color: #f08622;
+    color: white;
+    padding: 3% 5%;
+    margin: 10px 0;
+    border: transparent;
+    margin: auto;
+}
+
+@media only screen and (min-width:1000px) {
+    .main-content {
+        width: 90%;
+        margin: auto;
+    }
+    .main-content>h2 {
+        margin: 10px 0;
+        font-size: 1.4rem;
+    }
+    .main-content>.mytrip-form-content {
+        width: 40%;
+        padding: 2.5% 3%;
+        margin:2% auto;
+        background-color: white;
+    }
+    .main-content>.mytrip-form-content>p {
+        text-align: left;
+        font-size: 1rem;
+        color: #333;
+        margin-top: 0;
+    }
+}
