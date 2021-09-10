@@ -8,6 +8,7 @@ export default function FormFields() {
                 <span>Round Trip</span>
                 <span class="active">Multi City</span>
             </div>
+            {/*-----*/}
             <form>
                 <div className="input-content">
                     <label>From</label>
@@ -39,6 +40,7 @@ export default function FormFields() {
                 </div>
                 <button><span class="fa fa-search"></span></button>
             </form>
+            {/*-----*/}
         </div>
     )
 }
