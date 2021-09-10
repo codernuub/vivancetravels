@@ -4,12 +4,10 @@ export default function FormLists(prop) {
 
     //function to update the buttons below the form upon clicking
     const updateFormView = (formList) => {
-
         //first set the new button active
         prop.formLists.map(item => {
             item.active = item.name == formList.name ? true : false
         });
-
         //update the form that is shown
         prop.setFormView(formList.name)
     }
