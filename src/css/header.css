@@ -292,3 +292,15 @@ header>.right-head {
         color: #05058d
     }
 }
+
+@media only screen and (max-width:768px) {
+    #nav_options {
+        right: 80px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #nav_options {
+        right: 40px;
+    }
+}
