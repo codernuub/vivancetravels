@@ -104,6 +104,10 @@ input {
     height: 32% !important;
 }
 
+.date-input input {
+    font-family: sans-serif !important;
+}
+
 .formfield>form>button {
     display: block;
     width: 100%;
