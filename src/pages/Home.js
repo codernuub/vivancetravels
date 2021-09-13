@@ -10,10 +10,10 @@ export default function Home(props) {
 
     return (<div id="home">
         <Header menulists={props.menuLists} />
-        <Form/>
-        <Exclusive/>
-        <Hotels/>
-        <Holiday/>
+        <Form />
+        <Exclusive />
+        <Hotels />
+        <Holiday />
         <Footer menulists={props.menuLists} />
     </div>)
 }
