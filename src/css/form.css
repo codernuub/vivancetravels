@@ -307,3 +307,37 @@ input {
 #flightFormField .span button {
     margin-top: 17px;
 }
+
+@media screen and (max-width: 500px) {
+    #flightFormField .span {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-content {
+        width: 100% !important;
+        background-color: transparent;
+        color: white;
+    }
+    .input-content div,
+    .input-content div input {
+        background-color: transparent !important;
+        color: white !important;
+    }
+    #flightFormField .span button {
+        width: 100%;
+    }
+    .input-content div select {
+        background: transparent;
+        color: white;
+        font-size: 1em;
+    }
+    .input-content div select option {
+        color: black !important;
+    }
+    .input-content .input {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
