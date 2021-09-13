@@ -8,6 +8,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Offers from './pages/Offers';
 import MyTrip from './pages/MyTrip';
 import FormRedirect from './pages/FormRedirect';
+import SignIn from './modals/SignIn/SignIn'
 
 function App() {
   const [menuLists] = useState([
@@ -49,6 +50,7 @@ function App() {
   ]);
 
   return (
+    <>
     <Router>
       <Switch>
         <Route exact path="/" render={() => (<Home menuLists={menuLists} />)} />
@@ -61,6 +63,8 @@ function App() {
         <Route path="/form" render={() => (<FormRedirect />)} />
       </Switch>
     </Router>
+    <SignIn></SignIn>
+    </>
   );
 }
 

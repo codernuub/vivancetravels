@@ -1,0 +1,112 @@
+.signIn_box {
+    position: absolute;
+    top: -200%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.1s;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.301);
+    border-radius: 3px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.box1 {
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+}
+
+.box1 p {
+    color: white;
+    font-weight: bold;
+}
+
+.box2 {
+    width: 100%;
+}
+
+.box2 input {
+    width: 97%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 5px;
+    border: 1px solid black !important;
+    font-size: 1.02em;
+    padding-left: 5px;
+}
+
+.box3 {
+    text-align: center;
+}
+
+.box3 button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none !important;
+    cursor: pointer;
+}
+
+.box4 {
+    text-align: center;
+}
+
+.box4 a,
+.box4 p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    text-decoration: none;
+}
+
+.forgot_pwd,
+.signUp {
+    font-size: 0.7em;
+}
+
+.close_btn {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    background-color: white !important;
+    border: 1px solid rgba(0, 0, 0, 0.452) !important;
+    padding: 5px 7px !important;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .signIn_box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .signIn_box {
+        width: 85%;
+    }
+}

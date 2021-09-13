@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
 }
 
+
 /*left head*/
 
 header>.left-head {
@@ -15,9 +16,12 @@ header>.left-head>.img-link {
     width: 55%;
     margin: auto 0;
 }
-header>.left-head>.img-link>img{
+
+header>.left-head>.img-link>img {
     width: 100%;
 }
+
+
 /*menu bar inactive*/
 
 .menu {
@@ -71,6 +75,7 @@ header>.left-head>.img-link>img{
     line-height: 33px;
 }
 
+
 /*menu bar*/
 
 .menubar {
@@ -85,6 +90,7 @@ header>.left-head>.img-link>img{
     margin: 6px 0;
     height: 4px;
 }
+
 
 /*Right Head*/
 
@@ -106,7 +112,44 @@ header>.right-head {
     display: block;
     width: 30px;
     margin: auto;
+    cursor: pointer;
 }
+
+#nav_options {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 40px;
+    right: 120px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#nav_options li {
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#nav_options li:first-child {
+    border-top: 1px solid black;
+}
+
+#nav_options li button {
+    width: 100%;
+    padding: 3px 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#nav_options li button:hover {
+    background-color: rgb(221, 220, 220);
+}
+
 
 /*country list*/
 
