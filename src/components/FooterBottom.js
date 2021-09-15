@@ -4,7 +4,7 @@ import '../css/footerBottom.css';
 export default function FooterBottom(prop) {
     return (<div className="footer-bottom">
         <ul>
-            {prop.menulists.map((list, index) => {
+            {prop.menuLists.map((list, index) => {
                 const label = list.label.replace(list.label[0], list.label[0].toUpperCase())
                 return <li key={index + 1}><a href={list.href}>{label}</a></li>
             })}

@@ -58,31 +58,15 @@ export default function FormSection(prop) {
 
     return (
         <div className="form-wrapper">
-            {
-                formView == "FLIGHTS" ?
-                    <FlightFormFields /> : ""
-            }
-            {
-                formView == "HOTELS" ?
-                    <HotelFormFields /> : ""
-            }
-            {
-                formView == "BUSES" ?
-                    <BusFormFields /> : ""
-            }
-            {
-                formView == "TRANSFERS" ?
-                    <TransferFormFields /> : ""
-            }
-            {
-                formView == "ACTIVITIES" ?
-                    <ActivitiesFormFields /> : ""
-            }
-            {
-                formView == "HOLIDAYS" ?
-                    <HolidaysFormFields /> : ""
-            }
-            <FormLists formLists={formListsData} setFormView={setFormView} setFromListData={setFromListData} />
+            {{
+                "FLIGHTS": <FlightFormFields />,
+                "HOTELS": <HotelFormFields />,
+                "BUSES": <BusFormFields />,
+                "TRANSFERS": <TransferFormFields />,
+                "ACTIVITIES": <ActivitiesFormFields />,
+                "HOLIDAYS": <HolidaysFormFields />,
+            }[formView]}
+            < FormLists formLists={formListsData} setFormView={setFormView} setFromListData={setFromListData} />
         </div>
     )
 }

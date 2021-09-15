@@ -1,13 +1,8 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
 import '../css/content.css';
 
 export default function Faq(props) {
     return (
-        <div>
-            <Header menulists={props.menuLists} />
             <div className='faq content'>
                 <h1 className='content-head'>FAQ</h1>
 
@@ -35,7 +30,5 @@ export default function Faq(props) {
                 <p className="sm-text">We encourage paperless system. You can always view the itinerary on the go. If you are logged in then you see your tickets in “My Account”. As a guest user, you can retrieve the ticket by clicking on “MY TRIP” from main menu.</p>
 
             </div>
-            <Footer menulists={props.menuLists} />
-        </div>
     );
 }

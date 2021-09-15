@@ -59,22 +59,14 @@ export default function Header(prop) {
         nav.classList.toggle('open-list');
     }
 
-    //State and function to control nav options
-    const [open,setOpen] = useState(false)
-    const toggleNavOptions = ()=>{
-        setOpen(!open);
-    }
-
-    const toggleLogin=()=>{
-        if(document.getElementById("signIn_box").style.top=="30%"){
-            document.getElementById("signIn_box").style.top = "-200%"
-        }else{
-            document.getElementById("signIn_box").style.top = "0%"
+    const toggleForm = () => {
+        prop.changeForm("signIn");
+        if (document.querySelector(".modal").style.top === "30%") {
+            document.querySelector(".modal").style.top = "-200%"
+        } else {
+            document.querySelector(".modal").style.top = "0%"
         }
     }
-
-    
-
     return (
         <header>
             <div className="left-head">
@@ -85,20 +77,20 @@ export default function Header(prop) {
                         <span></span>
                         <span></span>
                     </div>
-                    <MenuList lists={prop.menulists} />
+                    <MenuList lists={prop.menuLists} />
                 </div>
                 {/*menu*/}
                 <Link className='img-link' to="/"><img alt="vivance icon" src={logo} /></Link>
             </div>
             <div className="right-head">
                 <div className="userlogo">
-                    <img className="img" src={userlogo} alt="" onClick={toggleNavOptions} />
+                    <img className="img" src={userlogo} alt="" onClick={toggleForm} />
                 </div>
-                    <ul id="nav_options" style={{display:open?'flex':'none'}}>
-                        <li><button type="button" onClick={toggleLogin}>Sign In</button></li>
-                        <li><button type="button">Create Account</button></li>
-                    </ul>
-
+                {/* 
+                <ul id="nav_options" style={{ display: open ? 'flex' : 'none' }}>
+                    <li><button type="button" onClick={toggleForm}>Sign In</button></li>
+                    <li><button type="button">Create Account</button></li>
+                </ul>*/}
                 <div className='countries'>
                     <div className="top">
                         <span className="countryFlag">

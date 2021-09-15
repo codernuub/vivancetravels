@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { DestList } from './utils/ListBuilder';
 import '../css/footerTop.css';
 
-export default function FooterTop() {
+export default function FooterTop(props) {
     const [destLists] = useState(["Delhi-Mumbai", "Banglore-Hyderabad", "Dubai-Hyderabad", "Ney york-Banglore", "Banglore-Dubai", "Banglore-Hyderabad", "Goa-Dubai", "Dubai-Chennai", "Chennai-Mumbai", "Delhi-Kolkata", "Pune-Cochin", " Udaipur-Hyderabad"])
     const [hotelLists] = useState(["Banglore Hotels", "Singapoor Hotels", "Dubai Hotels", "Sydney Hotels", "London Hotels", "Goa Hotels", "Manali Hotels", "Kolkata Hotels", "Netherlands Hotels", "Delhi Hotels", "Bombay Hotels"])
+    const toggleContactForm = () => {
+        props.changeForm("contact")
+        if (document.querySelector(".modal").style.top === "30%") {
+            document.querySelector(".modal").style.top = "-200%"
+        } else {
+            document.querySelector(".modal").style.top = "0%"
+        }
+    }
     return (<div className="container">
 
         <DestList label="Cheap flights by Destinations" lists={destLists} />
@@ -21,7 +29,7 @@ export default function FooterTop() {
                         <Link to="/aboutus" className="a">About us</Link>
                     </li>
                     <li>
-                        <a>Contact us</a>
+                        <a onClick={toggleContactForm} className="a">Contact us</a>
                     </li>
 
                     <li id="card">
@@ -46,7 +54,7 @@ export default function FooterTop() {
                         <Link to="/offers" className="a">Offers</Link>
                     </li>
                     <li>
-                        <a id="flight_fare_calendar">Fare Calender</a>
+                        <Link to="/farecalendar">Fare Calender</Link>
                     </li>
                     <li>
                         <Link to="/faq" className="a">FAQ</Link>

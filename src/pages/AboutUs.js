@@ -1,14 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
 import '../css/content.css';
 
 export default function About(props) {
 
     return (
-        <div>
-            <Header menulists={props.menuLists} />
+       
             <div className='aboutUs content'>
                 <h1 className='content-head'>About Us</h1>
                 <p className="sm-text">Witnessing many years of successful story of wellness tourism with brand name Sukrit Wellness, the founder has brought an innovative and comprehensive travel system to serve our customer in all aspects of tourism.</p>
@@ -25,7 +21,6 @@ export default function About(props) {
                 <br />
                 <br />
             </div>
-            <Footer menulists={props.menuLists} />
-        </div>
+         
     );
 }

@@ -9,8 +9,8 @@ export default function Footer(prop) {
             paddin: 0,
             margin: 0
         }}>
-            <FooterTop />
-            <FooterBottom menulists={prop.menulists} />
+            <FooterTop changeForm={prop.changeForm}/>
+            <FooterBottom menuLists={prop.menuLists} />
         </footer>
     )
 }
