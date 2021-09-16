@@ -1,0 +1,79 @@
+.fare-calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+
+.fare-calendar>.form-content {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+
+.fare-calendar>.form-content>.form-head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #05058d;
+    color: white;
+    padding: 15px 20px;
+}
+
+.fare-calendar>.form-content>.form-head>span {
+    display: block;
+    font-size: 1.8rem;
+    margin: auto 0;
+}
+
+.fare-calendar>.form-content>.form-head>h2 {
+    margin: auto;
+    color: #f08622;
+}
+
+.fare-calendar>.form-content>form {
+    padding: 20px;
+    background-color: #ededed;
+}
+
+.fare-calendar>.form-content>form>.field-content {
+    width: 100% !important;
+    margin-bottom: 10px;
+}
+
+.fare-calendar>.form-content>form>.field-content>label {
+    color: #333;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.fare-calendar>.form-content>form>.field-content>.input {
+    display: flex;
+    width: 95% !important;
+    padding: 10px 2.5%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #eee;
+}
+
+.fare-calendar>.form-content>form>.field-content>.input>span {
+    color: #f08622;
+    font-size: 1rem;
+    margin: auto 10px auto 0;
+}
+
+.fare-calendar>.form-content>form>.field-content>.input>input {
+    font-size: 1rem;
+}
+
+.fare-calendar>.form-content>form>button {
+    display: block;
+    width: 100%;
+    background-color: rgba(240, 134, 34, 0.8);
+    padding: 10px 0;
+    color: white;
+    border: none;
+    border-radius:5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}

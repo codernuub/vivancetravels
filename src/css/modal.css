@@ -68,9 +68,8 @@
     border-radius: 3px;
     padding: 10px 2.5%;
     font-size: 1em;
-    font-weight: bold;
     color: white;
-    background-color: orange;
+    background-color: #f08622;
     border: none !important;
     cursor: pointer;
 }
